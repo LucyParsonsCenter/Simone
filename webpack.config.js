@@ -20,8 +20,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.jsx?$/, exclude: /node_modules/, loader: 'jsx-loader'},
-      {test: /\.js?$/, exclude: /node_modules/, loader: 'babel?cacheDirectory'},
+      {test: /\.jsx$/, exclude: /node_modules/, loader: 'babel-loader'},
       { test: /\.css$/, loader: "style!css" }
     ]
   },
