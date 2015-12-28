@@ -8,7 +8,7 @@ var webpack = require('webpack'),
 module.exports = {
   target: 'web',
   cache: true,
-  entry: path.join(srcPath, 'app.jsx'),
+  entry: path.join(srcPath, 'simone.js'),
   resolve: {
     root: srcPath,
     extensions: ['', '.js', '.jsx'],
@@ -21,6 +21,7 @@ module.exports = {
   module: {
     loaders: [
       {test: /\.jsx$/, exclude: /node_modules/, loader: 'babel-loader'},
+      {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
       { test: /\.css$/, loader: "style!css" }
     ]
   },
