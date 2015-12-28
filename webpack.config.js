@@ -8,7 +8,11 @@ var webpack = require('webpack'),
 module.exports = {
   target: 'web',
   cache: true,
-  entry: path.join(srcPath, 'simone.js'),
+  entry: [
+    'webpack-dev-server/client?http://0.0.0.0:8080',
+    'webpack/hot/only-dev-server',
+    path.join(srcPath, 'simone.js')
+  ],
   resolve: {
     root: srcPath,
     extensions: ['', '.js', '.jsx'],
@@ -20,8 +24,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.jsx$/, exclude: /node_modules/, loader: 'babel-loader'},
-      {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
+      {test: /\.jsx$/, exclude: /node_modules/, loaders: ['react-hot', 'babel-loader']},
+      {test: /\.js$/, exclude: /node_modules/, loaders: ['react-hot', 'babel-loader']},
       { test: /\.css$/, loader: "style!css" }
     ]
   },
