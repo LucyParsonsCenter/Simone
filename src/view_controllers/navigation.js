@@ -10,7 +10,7 @@ class SimoneNav extends React.Component {
           <Navbar.Header>
           </Navbar.Header>
           <Nav>
-            <LinkContainer to="/">
+            <LinkContainer to="/home">
               <NavItem>Home</NavItem>
             </LinkContainer>
             <LinkContainer to="/sales">
