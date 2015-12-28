@@ -16,6 +16,9 @@ class SimoneNav extends React.Component {
             <LinkContainer to="/sales">
               <NavItem>Sales</NavItem>
             </LinkContainer>
+            <LinkContainer to="/inventory">
+              <NavItem>Inventory</NavItem>
+            </LinkContainer>
           </Nav>
         </Navbar>
         {this.props.children}
