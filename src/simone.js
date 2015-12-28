@@ -11,10 +11,10 @@ import InventoryVC from 'view_controllers/inventory';
 render((
   <Router>
     <Route path="/" component={SimoneNav}>
-      <IndexRoute component={HomeVC} />
-      <Route path="/home" component={HomeVC} />
-      <Route path="/sales" component={RegisterVC} />
-      <Route path="/inventory" component={InventoryVC} />
+      <IndexRoute component={HomeVC}></IndexRoute>
+      <Route path="/home" component={HomeVC}></Route>
+      <Route path="/sales" component={RegisterVC}></Route>
+      <Route path="/inventory" component={InventoryVC}></Route>
     </Route>
   </Router>
 ), document.getElementById('simone'));
