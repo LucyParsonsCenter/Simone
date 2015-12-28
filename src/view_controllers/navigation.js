@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
 
 class SimoneNav extends React.Component {
   render() {
@@ -10,9 +10,9 @@ class SimoneNav extends React.Component {
           <Navbar.Header>
           </Navbar.Header>
           <Nav>
-            <LinkContainer to="/home">
+            <IndexLinkContainer to="/home">
               <NavItem>Home</NavItem>
-            </LinkContainer>
+            </IndexLinkContainer>
             <LinkContainer to="/sales">
               <NavItem>Sales</NavItem>
             </LinkContainer>
