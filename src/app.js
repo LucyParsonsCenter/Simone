@@ -7,6 +7,8 @@ import Nav from 'view_controllers/navigation';
 // this is the router for the whole application
 render((
   <Router>
-    <Route path="/" component={Nav} />
+    <Route path="/" component={Nav}>
+      <Route path="/help" component={Help}>
+    <Route>
   </Router>
 ), document.getElementById('simone'));
