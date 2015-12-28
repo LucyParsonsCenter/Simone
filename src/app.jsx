@@ -2,20 +2,11 @@ import React from 'react';
 import { render } from 'react-dom';
 
 import { Router, Route } from 'react-router';
+import Nav from 'view_controllers/navigation';
 
-const App = React.createClass({
-  render () {
-    return (
-      <div>
-        <h1>Hey!</h1>
-      </div>
-    )
-  }
-})
-
+// this is the router for the whole application
 render((
   <Router>
-    <Route path="/" component={App}>
-    </Route>
+    <Route path="/" component={Nav} />
   </Router>
-), document.body)
+), document.getElementById('simone'));
