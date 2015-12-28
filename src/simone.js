@@ -8,7 +8,6 @@ import Nav from 'view_controllers/navigation';
 render((
   <Router>
     <Route path="/" component={Nav}>
-      <Route path="/help" component={Help}>
-    <Route>
+    </Route>
   </Router>
 ), document.getElementById('simone'));

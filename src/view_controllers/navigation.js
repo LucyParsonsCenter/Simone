@@ -23,7 +23,6 @@ class Nav extends React.Component {
           <MenuItem eventKey="4.2">Another action</MenuItem>
           <MenuItem eventKey="4.3">Something else here</MenuItem>
           <MenuItem eventKey="4.4">Separated link</MenuItem>
-          <MenuItem divider />
         </NavDropdown>
       </Nav>
     );
