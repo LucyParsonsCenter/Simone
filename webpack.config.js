@@ -1,17 +1,3 @@
-module.exports = {
-    entry: "./app.js",
-    output: {
-        path: __dirname,
-        filename: "bundle.js"
-    },
-    module: {
-        loaders: [
-            { test: /\.css$/, loader: "style!css" }
-        ]
-    }
-};
-
-
 'use strict';
 
 var webpack = require('webpack'),
@@ -22,26 +8,20 @@ var webpack = require('webpack'),
 module.exports = {
   target: 'web',
   cache: true,
-  entry: {
-    module: path.join(srcPath, 'module.js'),
-    common: ['react', 'react-router', 'alt']
-  },
+  entry: path.join(srcPath, 'app.jsx'),
   resolve: {
     root: srcPath,
-    extensions: ['', '.js'],
+    extensions: ['', '.js', '.jsx'],
     modulesDirectories: ['node_modules', 'src']
   },
   output: {
-    path: path.join(__dirname, 'tmp'),
-    publicPath: '',
-    filename: '[name].js',
-    library: ['Example', '[name]'],
-    pathInfo: true
+    path: __dirname,
+    filename: 'bundle.js',
   },
-
   module: {
     loaders: [
-      {test: /\.js?$/, exclude: /node_modules/, loader: 'babel?cacheDirectory'}
+      {test: /\.js?$/, exclude: /node_modules/, loader: 'babel?cacheDirectory'},
+      { test: /\.css$/, loader: "style!css" }
     ]
   },
   plugins: [
@@ -52,7 +32,6 @@ module.exports = {
     }),
     new webpack.NoErrorsPlugin()
   ],
-
   debug: true,
   devtool: 'eval-cheap-module-source-map',
   devServer: {
