@@ -10,9 +10,13 @@ React + Flux + React router + es6 and so on.
 Want to do some development work? Great! Clone the repo and do:
 
 ```
-npm install -g webpack webpack-dev-server eslint babel-eslint eslint-plugin-react
-cd ./Simone && npm install
+npm install -g --only=dev
+npm install
 ```
+
+The first gets the various tools on your `$PATH` to build the project and
+so on, and the second installs all dependencies in a per-project
+`/node_modules`.
 
 We're using Webpack for transpilation of ES2015 to ES5, JSX to plain JS,
 and compiling Sass to plain CSS. To start up the hot-reloading webpack dev
@@ -29,7 +33,13 @@ We're also using ESLint with the Babel plugin to lint all that es6
 fancyness. If you want to check your code you can do
 
 ```
-npm lint
+npm run-script lint
+```
+
+or 
+
+```
+eslint ./src
 ```
 
 ##License
