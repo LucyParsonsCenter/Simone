@@ -1,5 +1,7 @@
 #Simone
 
+[![Build Status](https://semaphoreci.com/api/v1/projects/41ce2a6e-a985-48e0-b0b3-795dfbf299da/647585/badge.svg)](https://semaphoreci.com/alice-pote/simone)
+
 This is the frontend application which talks to
 [Beauvoir](https://github.com/LucyParsonsCenter/Beauvoir).
 
