@@ -10,7 +10,7 @@ React + Flux + React router + es6 and so on.
 Want to do some development work? Great! Clone the repo and do:
 
 ```
-npm install -g webpack webpack-dev-server
+npm install -g webpack webpack-dev-server eslint babel-eslint
 cd ./Simone && npm install
 ```
 
