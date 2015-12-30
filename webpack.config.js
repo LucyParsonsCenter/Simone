@@ -23,9 +23,6 @@ module.exports = {
     filename: 'bundle.js',
   },
   module: {
-    preloaders: [
-      {test: /\.jsx$/, exclude: /node_modules/, loaders: 'eslint-loader'}
-    ],
     loaders: [
       {test: /\.jsx$/, exclude: /node_modules/, loaders: ['react-hot', 'babel-loader']},
       {test: /\.js$/, exclude: /node_modules/, loaders: ['react-hot', 'babel-loader']},
