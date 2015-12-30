@@ -10,7 +10,7 @@ React + Flux + React router + es6 and so on.
 Want to do some development work? Great! Clone the repo and do:
 
 ```
-npm install -g webpack webpack-dev-server eslint babel-eslint
+npm install -g webpack webpack-dev-server eslint babel-eslint eslint-plugin-react
 cd ./Simone && npm install
 ```
 
@@ -24,6 +24,13 @@ npm start
 
 after you've installed everything, and the hot-reload server should come
 up! Check `http://localhost:8080`.
+
+We're also using ESLint with the Babel plugin to lint all that es6
+fancyness. If you want to check your code you can do
+
+```
+npm lint
+```
 
 ##License
 
