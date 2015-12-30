@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 class InventoryVC extends React.Component {
   render () {

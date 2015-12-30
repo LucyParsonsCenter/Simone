@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 class RegisterVC extends React.Component {
   render () {

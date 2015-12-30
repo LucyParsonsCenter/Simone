@@ -1,6 +1,6 @@
-import React from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
+import React from "react";
+import { Navbar, Nav, NavItem } from "react-bootstrap";
+import { LinkContainer, IndexLinkContainer } from "react-router-bootstrap";
 
 class SimoneNav extends React.Component {
   render() {
